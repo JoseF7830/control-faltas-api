@@ -13,8 +13,13 @@ const suspenciones = require('./modules/suspensiones/rutas');
 
 const app = express();
 
+const corsOptions ={
+    origin: config.app.origin,
+    optionsSuccessStatus: 200
+}
+
 // app configuration
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.set('port', config.app.port);
 

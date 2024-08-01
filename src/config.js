@@ -1,7 +1,8 @@
 module.exports = {
     app: {
         port: process.env.PORT || 4000,
-        tokenSecret: process.env.TOKEN_SECRET
+        tokenSecret: process.env.TOKEN_SECRET,
+        origin: process.env.ORIGIN
     },
     mysql: {
         host: process.env.MYSQL_HOST,
