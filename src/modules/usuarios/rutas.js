@@ -28,7 +28,7 @@ router.get('/:id_usuario',function(req,res) {
     })
 });
 
-router.delete('/:idUsuario', function(req, res) {
+router.delete('/:id_usuario', function(req, res) {
     controlador.deleteOne(req.params).then((respuesta) => {
         responses.success(req, res, respuesta, 200);
     })

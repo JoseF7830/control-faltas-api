@@ -20,7 +20,7 @@ function insert(body) {
 }
 
 function update(body){
-    const values = `username = '${body.username}', password = '${body.password}', nombre = '${body.nombre}', plan = '${body.rol}'`;
+    const values = `username = '${body.username}', password = '${body.password}', nombre = '${body.nombre}', rol = '${body.rol}'`;
     const condition = `id_usuario = '${body.id_usuario}'`;
     return db.update(TABLA, values, condition);
 }
